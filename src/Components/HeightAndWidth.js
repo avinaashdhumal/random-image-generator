@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './heightAndwidth.css'
 import { Form, Image } from "semantic-ui-react"
 export default function HeightAndWidth() {
-    const [height, setHeight] = useState();
-    const [width, setWidth] = useState();
+    const [height, setHeight] = useState(500);
+    const [width, setWidth] = useState(600);
     // const getWidthAndHeight=()=>{
     //     return {
     //         width: width,
