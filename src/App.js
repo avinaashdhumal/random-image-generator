@@ -1,23 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-
+import HeightAndWidth from './Components/HeightAndWidth'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Created with 🧡 by <a href="https://twitter.com/avinaashdhumal">Avinash</a></h1>
+      <h2>Random Image Generator</h2>
+      <HeightAndWidth />
     </div>
   );
 }

@@ -1,0 +1,57 @@
+form{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    /* background-color: black; */
+    text-align: center;
+    padding: 1rem auto;
+    color: black;
+}
+input{
+    padding: 0.2rem 0.3rem;
+}
+#button{
+    padding: 0.2rem 0.3rem;
+    margin: 0 1rem;
+    font-size: 18px;
+    background: rgb(54, 243, 126);
+    border: 0px ;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 0.3rem;
+}
+
+label{
+    margin: 0 1rem;
+}
+#div{
+    padding: 1rem 0.3rem;
+    /* background-color: black; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+#img{
+    padding-top: 1rem;
+    margin:  auto;
+    border-radius: 0.5rem;
+}
+.img-class{
+    padding: 0;
+    margin: 0;
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+
+/* 
+ */
+ /* Using Sematic Ui */
+ .sematic-container{
+     display: flex;
+     margin-top: 3rem;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+     height: 100vh;
+ }
