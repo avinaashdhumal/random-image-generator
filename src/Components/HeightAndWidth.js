@@ -1,20 +1,16 @@
 import React, { useState } from 'react';
 import './heightAndwidth.css'
-import { Form, Image } from "semantic-ui-react"
+import { Button, Form, Image } from "semantic-ui-react"
 export default function HeightAndWidth() {
-<<<<<<< HEAD
-    const [height, setHeight] = useState(200);
-    const [width, setWidth] = useState(200);
-=======
-    const [height, setHeight] = useState(500);
-    const [width, setWidth] = useState(600);
->>>>>>> 76b6547269f656890fc1d0e8b7b821ad4d516f55
+    const [height, setHeight] = useState();
+    const [width, setWidth] = useState();
     // const getWidthAndHeight=()=>{
     //     return {
     //         width: width,
     //         height: height
     //     }
     // }
+    const srcImage = `https://picsum.photos/${width}/${height}`
     return (
         // <div id="div">
         //     <form>
@@ -45,7 +41,15 @@ export default function HeightAndWidth() {
                     />
                 </Form.Group>
             </Form>
-            <Image src={`https://picsum.photos/${width}/${height}`} rounded />
+            <div>
+                <a href={srcImage} download><Button primary>Download</Button></a>
+                <p style={{ width: "200px" }}><strong style={{ fontSize: "16px" }}>Note: </strong>When you download the image, you'll get different image due to randomness</p>
+                <br />
+            </div>
+
+            <Image src={srcImage} />
+
+
         </div>
     )
 }
